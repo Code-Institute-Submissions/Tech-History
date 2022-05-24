@@ -1,0 +1,34 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Marc Picornell> -- <Front End Web Developer> -- <@marcpicornell>
+
+# THANKS
+
+    Code Institute,
+    Alain Gaxatte - the teacher who created the IT club in my school. I knew since then that I would work in IT.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+
+# OTHER
+
+    This is the first project to be delivered for Code Institute.
+    If you read this file, thanks for taking the time.
+    Drop me an email: marc@marcpicornell.com.
+
+# IN MEMORY
+
+To Gary Kildall one of the true genious of the Silicon Valley who died stupidly while still so young.
+More about Gary: https://en.wikipedia.org/wiki/Gary_Kildall
+
+The true story of Gary:
+
+    https://www.youtube.com/watch?v=Tdj8gh9GPc4
+    https://www.youtube.com/watch?v=sDIK-C6dGks
+
+
+    
