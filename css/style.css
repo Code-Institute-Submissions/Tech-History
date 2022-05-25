@@ -1,0 +1,58 @@
+/* 
+    Project 1
+    Marc Picornell
+    May 2022
+    marc [at] marcpicornell.com
+*/
+
+/* 
+    Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+/* 
+    Variables
+*/
+:root {
+    --primary-color:;
+    --background-color:;
+}
+
+/*
+    Generic Selector
+*/
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Fira Code', monospace;
+    text-align: left;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*
+    Class Selector
+*/
+
+
+/*
+    Media Queries
+*/
+
