@@ -46,7 +46,7 @@ A tribute to many peoples who pionneerd the IT industry and for some who are alr
 
 ## Sources
 Hambuger menu with CSS only: https://www.youtube.com/watch?v=DZg6UfS5zYg
-Inspiration for a timeline: https://www.w3schools.com/howto/howto_css_timeline.asp
+Inspiration for the taken from the timeline tutorials from w3schools: https://www.w3schools.com/howto/howto_css_timeline.asp
 
 # Features
 
@@ -78,8 +78,9 @@ Tested with:
 
 # validation
 
-
-
+# Deployement
+This website is running on GITHUB Page using a custom domain that I bought for the project.
+It's cleaner, better, faster and will probably enable me to release this project when it will be mature enough.
 
 
 
