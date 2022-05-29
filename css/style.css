@@ -180,6 +180,8 @@ a {
   background-color: black;
   position: relative;
   border-radius: 6px;
+  color: #f0fff8;
+  text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
