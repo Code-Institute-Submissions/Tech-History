@@ -13,10 +13,6 @@
 /* 
     Variables
 */
-:root {
-    --primary-color:;
-    --background-color:;
-}
 
 /*
     Generic Selector
@@ -29,7 +25,7 @@
 }
 
 html {
-    background-color: white;
+    background-color: black;
 }
 
 
@@ -37,7 +33,7 @@ html {
 h1 {
     font-family: 'Fira Code', monospace;
     text-align: left;
-    color: black;
+    color: white;
 }
 
 li {
@@ -100,7 +96,7 @@ a {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: black;
+  background-color: white;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -125,7 +121,7 @@ a {
   height: 25px;
   right: -17px;
   background-color: black;
-  border: 4px solid #33FF33;
+  border: 4px solid #ffb000;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -150,7 +146,7 @@ a {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid black;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent black;
 }
@@ -164,9 +160,9 @@ a {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid black;
+  border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent white transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -180,8 +176,6 @@ a {
   background-color: black;
   position: relative;
   border-radius: 6px;
-  color: #f0fff8;
-  text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -201,9 +195,9 @@ a {
 /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid black;
+    border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent black transparent transparent;
+    border-color: transparent white transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
