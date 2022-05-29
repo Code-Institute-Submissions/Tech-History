@@ -52,6 +52,8 @@ a {
 /*
     Class Selector
 */
+/*
+
 .menu-wrap {
     position: fixed;
     top: 0;
@@ -82,15 +84,18 @@ a {
     align-items: center;
     justify-content: center;
 }
+*/
 
 /* The actual timeline (the vertical ruler) */
+
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
-
+/* 
 /* The actual timeline (the vertical ruler) */
+
 .timeline::after {
   content: '';
   position: absolute;
@@ -103,6 +108,7 @@ a {
 }
 
 /* Container around content */
+
 .container {
   padding: 10px 40px;
   position: relative;
@@ -111,6 +117,7 @@ a {
 }
 
 /* The circles on the timeline */
+
 .container::after {
   content: '';
   position: absolute;
@@ -207,7 +214,7 @@ a {
     left: 0%;
   }
 }
-
+*/
 
 /*
     Media Queries
