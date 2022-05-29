@@ -47,6 +47,11 @@ A tribute to many peoples who pionneerd the IT industry and for some who are alr
 ## Sources
 Hambuger menu with CSS only: https://www.youtube.com/watch?v=DZg6UfS5zYg
 Inspiration for the taken from the timeline tutorials from w3schools: https://www.w3schools.com/howto/howto_css_timeline.asp
+CSS like terminal: https://retrocomputing.stackexchange.com/questions/12835/exactly-what-color-was-the-text-on-monochrome-terminals-with-green-on-black-and
+
+```color: #f0fff8; /* almost white */
+text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
+```
 
 # Features
 
