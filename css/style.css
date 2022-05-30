@@ -58,17 +58,17 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.6;
 }
+
 .logo {
   float: left;
 }
-.menu {
-  order: reverse;
-}
-
+/* 
 .menu li {
   text-decoration: none;
-  color: gray;
+  color: white;
+  background-color: black;
   float: right;
   font-size: 1.2rem;
   font-weight: 600;
@@ -76,10 +76,11 @@ a {
   text-transform: uppercase;
   margin-right: 5px;
   letter-spacing: 0.1rem;
+  width: 1024px;
 }
-
+*/
 .logo, .menu {
-  line-height: 80px;
+  line-height: 50px;
 }
 
 .year {
