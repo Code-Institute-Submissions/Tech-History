@@ -43,35 +43,41 @@ h1 {
   text-transform: uppercase;
 }
 
-a {
-    text-decoration: none;
-    color: gray;
-}
-
 /*
     Class Selector
 */
 .logo {
   float: left;
 }
+.menu {
+  order: reverse;
+}
 
 .menu li {
+  text-decoration: none;
+  color: gray;
   float: right;
   font-size: 1.4rem;
+  font-weight: 600;
   list-style-type: none;
   text-transform: uppercase;
   margin-right: 5px;
-  order: revert;
+  letter-spacing: 0.1rem;
 }
 
+.logo, .menu {
+  line-height: 50px;
+}
 .year {
   color: #FF9F55;
   font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 
 .people {
   color: cadetblue;
   font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 /* The actual timeline (the vertical ruler) */
