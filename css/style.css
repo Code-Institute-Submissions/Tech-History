@@ -9,6 +9,7 @@
     Fonts
 */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 /* 
     Variables
@@ -172,9 +173,15 @@ a {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: gray;
   position: relative;
   border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.content:hover {
+  background-color: white;
+
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
