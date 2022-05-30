@@ -42,13 +42,22 @@ A tribute to many peoples who pionneerd the IT industry and for some who are alr
 
 ## Targeted audiance
 
+To better predict the future we must better understand the past. This website will be an overview of past technology who are still in use today.
+e.g. Why do we use 80 collum for programing? Because at the beginning there was no screen. TTY or also known as Teletype (like a typewriter) was used to display the content and it was by default 80 for the paper.
+
 ### Persona
+
+Eavan, she is 22. She is a Computer Science student in Trinity College and she would like to better understand why 50 years after we still use some stuff in programming.
+e.g. CTRL-C or CTRL-Z
+
+Sean, 50 years old. He is a retro computer entusiast and would like to better understand the Commodore 64 that he bought on E-bay a few weeks ago.
+e.g. https://eater.net/6502
 
 ## Sources
 Hambuger menu with CSS only: https://www.youtube.com/watch?v=DZg6UfS5zYg
-Inspiration for the taken from the timeline tutorials from w3schools: https://www.w3schools.com/howto/howto_css_timeline.asp
-CSS like terminal: https://retrocomputing.stackexchange.com/questions/12835/exactly-what-color-was-the-text-on-monochrome-terminals-with-green-on-black-and
+Inspiration for the timeline taken from tutorials from w3schools: https://www.w3schools.com/howto/howto_css_timeline.asp
 
+This is a terminal effect that I might use later:
 ```color: #f0fff8; /* almost white */
 text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
 ```
@@ -79,6 +88,16 @@ Tested with:
 * Elinks (FreeBSD 13.1)
 * Safari (MacOS 12.4 & iOS 15.5)
 
+## Lighthouse result
+
+### Mobile
+### Desktop
+
+## W3C validation
+
+### HTML
+### CSS
+
 # Bugs
 
 # validation
@@ -86,6 +105,19 @@ Tested with:
 # Deployement
 This website is running on GITHUB Page using a custom domain that I bought for the project.
 It's cleaner, better, faster and will probably enable me to release this project when it will be mature enough.
+ ## File structure
+ 
+ ### File
+CNAME       required for the custom domain with Github Page
+humans.txt  who and what what used for this project
+README.md   this file
+
+ ### Folder
+ css    contain css files
+ html   contain all the html files except index.html who must be in the root folder of an http server.
+ img    contain all the images
+ js     contain the javascript
+
 
 
 
