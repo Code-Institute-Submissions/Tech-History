@@ -10,7 +10,7 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-
+@import url();
 /* 
     Variables
 */
@@ -24,7 +24,6 @@
     border: 0;
     padding: 0;
 }
-
 
 html {
     background-color: black;
@@ -49,38 +48,11 @@ a {
     Class Selector
 */
 
-/*
-.menu-wrap {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
+.footer-container {
+  max-width: 70%;
+  text-align: center;
+  t
 }
-
-.menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    width: 50px;
-    height: 50p x;
-    opacity: 0;
-}
-
-.menu-wrap .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    padding: 1rem;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
 
 .year {
   color: #FF9F55;
