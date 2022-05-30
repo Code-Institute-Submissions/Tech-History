@@ -10,7 +10,7 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-@import url();
+
 /* 
     Variables
 */
@@ -20,38 +20,52 @@
 */
 
 * {
-    box-sizing: border-box;
-    border: 0;
-    padding: 0;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: font-family: 'JetBrains Mono', monospace;
 }
 
 html {
-    background-color: black;
+  background-color: black;
 }
 
 h1 {
-    font-family: 'Fira Code', monospace;
-    text-align: center;
-    color: white;
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 5px;
+  text-transform: uppercase;
 }
 
-li {
-    list-style: none;
+nav {
+
 }
 
 a {
     text-decoration: none;
-    text-transform: uppercase;
+    color: gray;
 }
 
 /*
     Class Selector
 */
+.logo {
+  float: left;
+}
 
-.footer-container {
-  max-width: 70%;
-  text-align: center;
-  t
+.menu li {
+  float: right;
+  font-size: 1.4rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-right: 5px;
+  order: revert;
 }
 
 .year {
