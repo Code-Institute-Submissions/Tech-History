@@ -84,6 +84,12 @@ a {
 
 .year {
   color: #FF9F55;
+  font-size: 1.5rem;
+}
+
+.people {
+  color: cadetblue;
+  font-size: 1.3rem;
 }
 
 /* The actual timeline (the vertical ruler) */
