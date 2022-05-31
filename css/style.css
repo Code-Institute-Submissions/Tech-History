@@ -66,6 +66,11 @@ h2 {
 /*
     Class Selector
 */
+.terminal{
+    text-transform: uppercase;
+    color: #fb5;
+    font-family: monospace;
+}
 
 .wrapper {
   min-width: 20rem;
