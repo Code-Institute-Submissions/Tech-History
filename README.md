@@ -100,6 +100,7 @@ Tested with:
 ## Lighthouse result
 
 ### Mobile
+![Lighthouse Mobile](https://github.com/marcpicornell/Tech-History/blob/master/documentation/lighthouse.jpeg)
 ### Desktop
 
 ## W3C validation
