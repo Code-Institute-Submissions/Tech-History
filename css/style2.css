@@ -1,0 +1,208 @@
+/* 
+    Project 1
+    Marc Picornell
+    May 2022
+    marc [at] marcpicornell.com
+*/
+
+/* 
+    Fonts
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+/* 
+    Variables
+*/
+
+/* NOT USING ANY FOR NOW */
+
+/*
+    Generic Selector
+*/
+
+* {
+  /* Use to reset the DOM */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* Using a monospace font for a TERMINAL look and feel */
+  font-family: 'Courier Prime', monospace;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  padding: 5px;
+  width:  100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  padding-top: 1rem;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  font-family: 'Fira Sans', sans-serif;
+  }
+/*
+    Class Selector
+*/
+
+.wrapper {
+  min-width: 20rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header {
+  background-color: black;
+  /* box-shadow: 1px 1px 5px 0px gray; */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 4rem;
+  margin-left: 20px;
+  color: #f0fff8; /* almost white */ /* Found this effect on Stackoverflow a long time ago */
+  text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: black;
+  overflow: hidden;
+}
+
+.menu a {
+  display: block;
+  padding: 30px;
+  color: #fb5;
+}
+
+.menu a:hover {
+  background-color: #f20;
+}
+
+.nav {
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}
+
+.hamb-line {
+  background: #fb5;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+}
+
+.hamb-line::before,
+.hamb-line::after {
+  background: #fb5;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before {
+  top: 5px;
+}
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+@media (min-width: 768px) {
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    margin-top: 32px;
+    }
+  
+  .nav {
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .menu li {
+      float: left;
+  }
+  .menu a:hover {
+      background-color: transparent;
+      color: #f20;
+  }
+
+  .hamb {
+      display: none;
+  }
+}

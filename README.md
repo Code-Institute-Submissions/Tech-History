@@ -54,10 +54,11 @@ Sean, 50 years old. He is a retro computer entusiast and would like to better un
 e.g. https://eater.net/6502
 
 ## Sources
-Hambuger menu with CSS only: https://www.youtube.com/watch?v=DZg6UfS5zYg
+Hambuger menu in pure CSS from the tutorials from w3schools: 
 Inspiration for the timeline taken from tutorials from w3schools: https://www.w3schools.com/howto/howto_css_timeline.asp
+Found a list of media-query useable for a responsive site :-) 
 
-This is a terminal effect that I might use later:
+This is a terminal effect that I found on stackoverflow a long time ago and can't find the original post:
 ```color: #f0fff8; /* almost white */
 text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
 ```
@@ -69,11 +70,6 @@ text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff
 
 ## Time Line
 
-Color coded to point to the different subtopics. 
-Red
-Orange
-Green
-Yellow
 ## About
 
 ## Contact
