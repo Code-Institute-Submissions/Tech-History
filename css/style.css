@@ -189,6 +189,9 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.title {
+  text-align: center;
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
