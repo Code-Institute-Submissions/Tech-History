@@ -4,6 +4,8 @@ A website about the unknown story of the IT industry and more specificaly around
 Why the origin is rooted in the World War II effort in Europe.
 Why the Silicon Valley became the hub of the Digital Innovation.
 
+[Techno-History](https://www.techno-history.com)
+
 ## Why this project
 I have a passion for history and especially tech history.
 
