@@ -1,4 +1,4 @@
-![Techno-History]()
+![Techno-History](https://github.com/marcpicornell/Tech-History/documentation/screenshot.png)
 # Tech-History
 A website about the unknown story of the IT industry and more specificaly around the Silicon Valley!
 Why the origin is rooted in the World War II effort in Europe.
