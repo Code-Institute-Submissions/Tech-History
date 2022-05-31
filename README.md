@@ -67,6 +67,16 @@ text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff
 # Features
 
 ## Home
+### Header
+It's a responsive menu avec only 4 entries:
+
+*Home: return to the home page
+*Valey: link to a page about the Silicon Valley before
+*Silicon: link to the timeline of the Silicon
+
+Content
+
+Footer
 ### CTA
 
 ## Time Line
