@@ -8,6 +8,8 @@
 /* 
     Fonts
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
@@ -15,217 +17,192 @@
     Variables
 */
 
+/* NOT USING ANY FOR NOW */
+
 /*
     Generic Selector
 */
 
 * {
+  /* Use to reset the DOM */
   box-sizing: border-box;
-  border: none;
   padding: 0;
   margin: 0;
 }
 
 body {
-  margin: auto;
-  font-family: 'courier new', monospace;
-  max-width: 64rem;
+  /* Using a monospace font for a TERMINAL look and feel */
+  font-family: 'Courier Prime', monospace;
   background-color: black;
-}
-
-html {
-  height: 100%;
-}
-
-h1 {
-  font-family: 'Fira Code', monospace;
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 5px;
-  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
-  color: #fb5;
 }
 
-a:hover {
-  color: #f20;
+ul {
+  list-style: none;
 }
 
+img {
+  padding: 5px;
+  width:  100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  padding-top: 1rem;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  font-family: 'Fira Sans', sans-serif;
+  }
 /*
     Class Selector
 */
 
-/* .background {
-  background-image: url("https://www.techno-history.com/img/tech.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.3;
-  height: 100vh;
-  z-index: 1;
-} */
+.wrapper {
+  min-width: 20rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header {
+  background-color: black;
+  /* box-shadow: 1px 1px 5px 0px gray; */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 
 .logo {
-  float: left;
+  display: inline-block;
+  font-size: 4rem;
+  margin-left: 20px;
+  color: #f0fff8; /* almost white */ /* Found this effect on Stackoverflow a long time ago */
+  text-shadow: 0 0 3px #80ffc0, 0 0 10px #00ff66, 0 0 20px #00ff66, 0 0 30px #00ff66;
 }
- 
-.menu li {
-  text-decoration: none;
-  color: white;
+
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
   background-color: black;
+  overflow: hidden;
+}
+
+.menu a {
+  display: block;
+  padding: 30px;
+  color: #fb5;
+}
+
+.menu a:hover {
+  background-color: #f20;
+}
+
+.nav {
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+.hamb {
+  cursor: pointer;
   float: right;
-  font-size: 1.5rem;
-  font-weight: 600;
-  list-style-type: none;
-  text-transform: uppercase;
-  margin-right: 10px;
-  letter-spacing: 0.1rem;
+  padding: 40px 20px;
 }
 
-.logo, .menu {
-  line-height: 70px;
-}
-
-.year {
-  color: #FF9F55;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-.people {
-  color: cadetblue;
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
+.hamb-line {
+  background: #fb5;
+  display: block;
+  height: 2px;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 24px;
+
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
+.hamb-line::before,
+.hamb-line::after {
+  background: #fb5;
   content: '';
+  display: block;
+  height: 100%;
   position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  transition: all .2s ease-out;
+  width: 100%;
 }
 
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+.hamb-line::before {
+  top: 5px;
+}
+.hamb-line::after {
+  top: -5px;
 }
 
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+.side-menu {
+  display: none;
 }
 
-/* Place the container to the left */
-.left {
-  left: 0;
+.side-menu:checked ~ nav {
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
 }
 
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
+@media (min-width: 768px) {
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
+  h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    margin-top: 32px;
+    }
+  
+  .nav {
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
   }
 
-/* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+  .menu li {
+      float: left;
+  }
+  .menu a:hover {
+      background-color: transparent;
+      color: #f20;
   }
 
-/* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
-
-/* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
+  .hamb {
+      display: none;
   }
 }
