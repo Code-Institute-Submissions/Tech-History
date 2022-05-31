@@ -206,3 +206,28 @@ h2 {
       display: none;
   }
 }
+/* Original Code used in TILDE.CLUB */
+
+/* THEGOODS */
+#fancyboi::before {
+	content: "$ ";
+}
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes flash {
+		50% { opacity: 0; }
+	}
+	@keyframes reveal {
+		from { width: 2em; } /* Width of ::before */
+		  to { width: 100%; }
+	}
+	#fancyboi {
+		overflow: hidden;
+		white-space: nowrap;
+		animation: reveal 4s linear;
+		text-overflow: "█";
+	}
+	#fancyboi::after {
+		content: "█";
+		animation: flash 0.5s step-end infinite;
+	}
+}
